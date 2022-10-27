@@ -105,6 +105,10 @@ public class SBinTre<T> {
         if (q == null) rot = p;                  // p blir rotnode
         else if (cmp < 0) q.venstre = p;         // venstre barn til q
         else q.høyre = p;// høyre barn til q
+
+        //-----OPPGAVE-1 START-----
+
+    //-------------OPPGAVE1 FERDIG-------------
     }
 
     public boolean fjern(T verdi) {
