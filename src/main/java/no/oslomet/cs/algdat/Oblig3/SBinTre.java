@@ -166,8 +166,9 @@ public class SBinTre<T> {
             return p.forelder;
         }
 
-        }
-        return null;
+        else if(p==p.forelder.venstre){
+
+
     }
 //-----------OPPGAVE 3 FERDIG------------------------------------------------
 
