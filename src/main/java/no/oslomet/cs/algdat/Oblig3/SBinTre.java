@@ -157,11 +157,17 @@ public class SBinTre<T> {
     }
 
     private static <T> Node<T> nestePostorden(Node<T> p) {
-        //hvis det er rotnoden
+
         if(p.forelder==null){
             return null;
         }
 
+        else if(p==p.forelder.høyre){
+            return p.forelder;
+        }
+
+        }
+        return null;
     }
 //-----------OPPGAVE 3 FERDIG------------------------------------------------
 
