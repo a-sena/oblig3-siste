@@ -107,8 +107,14 @@ public class SBinTre<T> {
         else q.høyre = p;// høyre barn til q
 
         //-----OPPGAVE-1 START-----
+        if (q != null)
+            p.forelder = q;
 
-    //-------------OPPGAVE1 FERDIG-------------
+        else p.forelder = null;
+        antall++;                                // én verdi mer i treet
+        return true;                             // vellykket innlegging
+
+        //-------------OPPGAVE1 FERDIG-------------
     }
 
     public boolean fjern(T verdi) {
