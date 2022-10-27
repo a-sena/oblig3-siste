@@ -125,8 +125,22 @@ public class SBinTre<T> {
         throw new UnsupportedOperationException("Ikke kodet ennå!");
     }
 
+    //---------OPPGAVE2 STARTER-------------------
     public int antall(T verdi) {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        //Hvis verdi ikke  er i treet, skal metoden returnere 0
+
+        int antallForekomst =0; //teller
+
+        Node<T> p = rot;
+        while (p != null) {
+            int cmp = comp.compare(verdi, p.verdi);
+            if (cmp < 0) p = p.venstre;
+            else {  p = p.høyre;
+                antallForekomst++;
+
+            }
+        }
+        return antallForekomst;
     }
 
     public void nullstill() {
