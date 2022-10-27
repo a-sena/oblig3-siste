@@ -168,7 +168,15 @@ public class SBinTre<T> {
 
         else if(p==p.forelder.venstre){
 
+            if(p.forelder.høyre==null){ return p.forelder;}
 
+            //hvis det ikke er enebarn.
+            else {
+                return førstePostorden(p.forelder.høyre);
+                //Finner den første noden i det nye subtreet med høyrebarnet om rot.
+            }
+        }
+        return null;
     }
 //-----------OPPGAVE 3 FERDIG------------------------------------------------
 
