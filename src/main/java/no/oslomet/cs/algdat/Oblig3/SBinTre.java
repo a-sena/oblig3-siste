@@ -143,11 +143,11 @@ public class SBinTre<T> {
         }
         return antallForekomst;
     }
-
+    //---------OPPGAVE2 FERDIG-------------------
     public void nullstill() {
         throw new UnsupportedOperationException("Ikke kodet ennå!");
     }
-
+    //-----------OPPGAVE3 STARTER----------------------
     private static <T> Node<T> førstePostorden(Node<T> p) {
         throw new UnsupportedOperationException("Ikke kodet ennå!");
     }
