@@ -195,9 +195,19 @@ public class SBinTre<T> {
     }
 
     private void postordenRecursive(Node<T> p, Oppgave<? super T> oppgave) {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
-    }
+        //JEG FIKK HJELP FRA OPPGAVE 4 I AVSNITT 5.1.7
+        oppgave.utførOppgave(p.verdi);
+        if (p.venstre!=null){   //går inn i venstre barn
+            postordenRecursive(p.venstre,oppgave);
+        }
+        if(p.høyre!=null){  //Går inn i høyre barn
+            postordenRecursive(p.høyre,oppgave);
+        }
 
+
+
+    }
+    //-----------OPPGAVE 4 FERDIG------------------------------------------------
     public ArrayList<T> serialize() {
         throw new UnsupportedOperationException("Ikke kodet ennå!");
     }
