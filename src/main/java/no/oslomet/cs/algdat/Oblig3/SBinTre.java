@@ -196,14 +196,13 @@ public class SBinTre<T> {
 
     private void postordenRecursive(Node<T> p, Oppgave<? super T> oppgave) {
         //JEG FIKK HJELP FRA OPPGAVE 4 I AVSNITT 5.1.7
-        oppgave.utførOppgave(p.verdi);
         if (p.venstre!=null){   //går inn i venstre barn
             postordenRecursive(p.venstre,oppgave);
         }
         if(p.høyre!=null){  //Går inn i høyre barn
             postordenRecursive(p.høyre,oppgave);
         }
-
+        oppgave.utførOppgave(p.verdi);
 
 
     }
