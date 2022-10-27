@@ -157,8 +157,15 @@ public class SBinTre<T> {
     }
 
     private static <T> Node<T> nestePostorden(Node<T> p) {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        //hvis det er rotnoden
+        if(p.forelder==null){
+            return null;
+        }
+
     }
+//-----------OPPGAVE 3 FERDIG------------------------------------------------
+
+
 
     public void postorden(Oppgave<? super T> oppgave) {
         throw new UnsupportedOperationException("Ikke kodet ennå!");
