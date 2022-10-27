@@ -149,7 +149,11 @@ public class SBinTre<T> {
     }
     //-----------OPPGAVE3 STARTER----------------------
     private static <T> Node<T> førstePostorden(Node<T> p) {
-        throw new UnsupportedOperationException("Ikke kodet ennå!");
+        while (true) {
+            if (p.venstre != null) {p = p.venstre;} //hvis venstrebarn finnes
+            else if (p.høyre != null) {p = p.høyre;}    //hvis høyre barn finnes
+            else {return p;}    //har nå kommet til første node i post-orden
+        }
     }
 
     private static <T> Node<T> nestePostorden(Node<T> p) {
