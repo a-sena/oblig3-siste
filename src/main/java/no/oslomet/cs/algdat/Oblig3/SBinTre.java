@@ -170,10 +170,10 @@ public class SBinTre<T> {
 
             if(p.forelder.høyre==null){ return p.forelder;}
 
-            //hvis det ikke er enebarn.
+
             else {
                 return førstePostorden(p.forelder.høyre);
-                //Finner den første noden i det nye subtreet med høyrebarnet om rot.
+
             }
         }
         return null;
